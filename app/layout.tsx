@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import { getDictionary } from "@/lib/i18n";
-import { getContact } from "@/lib/data/getContact";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -28,18 +24,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const dict = getDictionary("fr");
-  const contact = getContact();
-
   return (
     <html
       lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Header nav={dict.nav} />
-        <main className="flex-1">{children}</main>
-        <Footer footer={dict.footer} nav={dict.nav} contact={contact} />
+        {children}
         <SpeedInsights />
       </body>
     </html>

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import LangSwitcher from "@/components/LangSwitcher";
+import type { Locale } from "@/lib/i18n";
 
 interface HeaderProps {
   nav: {
@@ -13,6 +15,8 @@ interface HeaderProps {
     menuOuvrir: string;
     menuFermer: string;
   };
+  lang?: Locale;
+  langLabels?: { fr: string; en: string };
 }
 
 const navLinks = [
@@ -23,7 +27,7 @@ const navLinks = [
   { href: "/contact", label: "contact" as const },
 ];
 
-export default function Header({ nav }: HeaderProps) {
+export default function Header({ nav, lang = "fr", langLabels }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -46,6 +50,11 @@ export default function Header({ nav }: HeaderProps) {
               </Link>
             ))}
           </nav>
+
+          {/* Sélecteur de langue */}
+          {langLabels && (
+            <LangSwitcher currentLang={lang} labels={langLabels} />
+          )}
 
           {/* Bouton hamburger mobile */}
           <button
