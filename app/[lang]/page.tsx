@@ -28,8 +28,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
     "@type": "NGO",
     name: "ONG CHADIA",
     alternateName: "CHADIA",
-    url: "https://chadia.com",
-    logo: "https://chadia.com/images/logo.png",
+    url: "https://ong-chadia.com",
+    logo: "https://ong-chadia.com/images/logo.png",
     address: {
       "@type": "PostalAddress",
       addressLocality: "N'Djaména",

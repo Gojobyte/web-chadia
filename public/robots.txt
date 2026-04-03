@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Sitemap: https://chadia.com/sitemap.xml
+Sitemap: https://ong-chadia.com/sitemap.xml
