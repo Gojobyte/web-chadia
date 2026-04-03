@@ -57,9 +57,10 @@ export async function POST(request: Request) {
     });
 
     if (!res.ok) {
-      console.error("Erreur Resend:", res.status);
+      const resendError = await res.text();
+      console.error("Erreur Resend:", res.status, resendError);
       return NextResponse.json(
-        { error: "Erreur lors de l'envoi" },
+        { error: "Erreur lors de l'envoi", details: resendError },
         { status: 500 }
       );
     }
