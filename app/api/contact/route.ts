@@ -49,7 +49,7 @@ export async function POST(request: Request) {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "Formulaire ONG CHADIA <onboarding@resend.dev>",
+        from: "Formulaire ONG CHADIA <contact@ong-chadia.com>",
         to: destinataire,
         subject: `[Contact Site] ${sujet} — ${nom}`,
         text: `Nom: ${nom}\nEmail: ${email}\nSujet: ${sujet}\n\nMessage:\n${message}`,
