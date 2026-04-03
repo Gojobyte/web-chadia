@@ -1,0 +1,37 @@
+{
+  "histoire": {
+    "titre": "Notre histoire",
+    "texte": "L'ONG CHADIA a été fondée avec la conviction que le développement durable passe par l'autonomisation des communautés locales. Depuis sa création, elle œuvre au Tchad pour améliorer les conditions de vie des populations les plus vulnérables, en intervenant dans les domaines de la santé, de l'éducation, de l'autonomisation des femmes et de l'accès à l'eau."
+  },
+  "vision": "Un Tchad où chaque communauté dispose des ressources et des capacités nécessaires pour construire un avenir résilient et digne.",
+  "mission": "Accompagner les communautés tchadiennes vers l'autonomie à travers des programmes de santé communautaire, d'éducation, d'autonomisation économique des femmes et d'accès à l'eau potable.",
+  "valeurs": [
+    { "titre": "Proximité", "description": "Nous intervenons au plus près des communautés, en comprenant leurs besoins réels." },
+    { "titre": "Transparence", "description": "Nous rendons compte de chaque franc utilisé à nos partenaires et bénéficiaires." },
+    { "titre": "Innovation sociale", "description": "Nous cherchons des solutions adaptées au contexte local, pas des modèles importés." },
+    { "titre": "Résilience", "description": "Nous construisons des capacités durables, pas des dépendances." }
+  ],
+  "statutLegal": {
+    "numeroEnregistrement": "",
+    "date": "",
+    "autorite": ""
+  },
+  "zonesIntervention": ["N'Djaména", "Mongo", "Guéra"],
+  "equipe": [
+    {
+      "nom": "[A VALIDER]",
+      "poste": "Directeur Exécutif",
+      "consent": false
+    },
+    {
+      "nom": "[A VALIDER]",
+      "poste": "Coordonnatrice des Programmes",
+      "consent": false
+    },
+    {
+      "nom": "[A VALIDER]",
+      "poste": "Responsable Financier",
+      "consent": false
+    }
+  ]
+}
