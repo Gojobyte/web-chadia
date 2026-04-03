@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   },
   description:
     "ONG CHADIA agit au Tchad pour la santé communautaire, l'éducation et l'autonomisation des femmes. Découvrez nos projets et comment nous rejoindre.",
-  metadataBase: new URL("https://ong-chadia.org"),
+  metadataBase: new URL("https://chadia.com"),
   openGraph: {
     type: "website",
     locale: "fr_FR",

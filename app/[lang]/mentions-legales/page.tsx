@@ -49,7 +49,7 @@ export default async function MentionsLegalesPage({ params }: { params: Promise<
           </div>
           <div>
             <h3 className="font-medium text-gray-900 mb-1">Vos droits</h3>
-            <p>Vous disposez d&apos;un droit d&apos;accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez-nous à l&apos;adresse : contact@ong-chadia.org</p>
+            <p>Vous disposez d&apos;un droit d&apos;accès, de rectification et de suppression de vos données. Pour exercer ces droits, contactez-nous à l&apos;adresse : contact@chadia.com</p>
           </div>
         </div>
       </section>
