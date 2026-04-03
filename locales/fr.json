@@ -1,0 +1,118 @@
+{
+  "nav": {
+    "accueil": "Accueil",
+    "aPropos": "À Propos",
+    "domaines": "Domaines",
+    "projets": "Projets",
+    "contact": "Contact",
+    "menuOuvrir": "Ouvrir le menu",
+    "menuFermer": "Fermer le menu"
+  },
+  "footer": {
+    "copyright": "© {year} ONG CHADIA. Tous droits réservés.",
+    "mentionsLegales": "Mentions légales",
+    "liensRapides": "Liens rapides",
+    "coordonnees": "Coordonnées"
+  },
+  "accueil": {
+    "hero": {
+      "ctaProjets": "Découvrir nos projets",
+      "ctaContact": "Nous contacter"
+    },
+    "chiffres": {
+      "titre": "Notre impact en chiffres"
+    },
+    "domaines": {
+      "titre": "Nos domaines d'intervention",
+      "voirTous": "Voir tous nos domaines",
+      "enSavoirPlus": "En savoir plus"
+    },
+    "projets": {
+      "titre": "Nos projets récents",
+      "voirTous": "Voir tous nos projets"
+    },
+    "ctaBeneficiaires": {
+      "titre": "Besoin d'aide ?",
+      "texte": "L'ONG CHADIA est à votre écoute. Contactez-nous directement sur WhatsApp pour une réponse rapide.",
+      "bouton": "Contactez-nous sur WhatsApp"
+    },
+    "equipe": {
+      "titre": "Notre équipe"
+    },
+    "partenaires": {
+      "titre": "Nos partenaires"
+    },
+    "brochure": {
+      "titre": "Télécharger notre brochure",
+      "bouton": "Télécharger la brochure (PDF)"
+    }
+  },
+  "about": {
+    "titre": "À Propos de l'ONG CHADIA",
+    "sections": {
+      "histoire": "Notre histoire",
+      "vision": "Notre vision",
+      "mission": "Notre mission",
+      "valeurs": "Nos valeurs",
+      "statutLegal": "Statut légal",
+      "zones": "Zones d'intervention",
+      "equipe": "Équipe dirigeante"
+    }
+  },
+  "domaines": {
+    "titre": "Domaines d'intervention",
+    "navigationRapide": "Navigation rapide",
+    "activitesCles": "Activités clés",
+    "indicateurs": "Indicateurs d'impact",
+    "zones": "Zones actives",
+    "projetsLies": "Projets liés"
+  },
+  "projets": {
+    "titre": "Nos projets & réalisations",
+    "filtres": {
+      "tous": "Tous",
+      "enCours": "En cours",
+      "termine": "Terminé"
+    },
+    "aucunResultat": "Aucun projet pour ces critères",
+    "enCoursDocumentation": "Projets en cours de documentation",
+    "voirTermines": "Voir les projets terminés"
+  },
+  "contact": {
+    "titre": "Contactez-nous",
+    "whatsapp": "Contactez-nous sur WhatsApp — réponse rapide",
+    "formulaire": {
+      "nom": "Votre nom",
+      "email": "Votre email",
+      "sujet": "Sujet",
+      "message": "Votre message",
+      "consentement": "J'accepte que mes données soient utilisées pour traiter ma demande",
+      "envoyer": "Envoyer",
+      "envoyerEnCours": "Envoi en cours..."
+    },
+    "sujets": {
+      "partenariat": "Partenariat",
+      "don": "Don",
+      "benevolat": "Bénévolat",
+      "aide": "Demande d'aide ou information",
+      "autre": "Autre"
+    },
+    "succes": "Votre message a été envoyé avec succès. Nous vous répondrons dans les plus brefs délais.",
+    "erreur": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer ou nous contacter directement.",
+    "coordonnees": "Nos coordonnées"
+  },
+  "errors": {
+    "404": {
+      "titre": "Page introuvable",
+      "message": "La page que vous cherchez n'existe pas ou a été déplacée.",
+      "retour": "Retour à l'accueil"
+    }
+  },
+  "legal": {
+    "titre": "Mentions légales & Politique de confidentialité"
+  },
+  "langue": {
+    "fr": "FR",
+    "en": "EN"
+  }
+}
