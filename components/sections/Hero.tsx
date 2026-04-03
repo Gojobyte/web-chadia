@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Accueil } from "@/lib/types";
 
 interface HeroProps {
@@ -11,8 +12,19 @@ interface HeroProps {
 
 export default function Hero({ hero, labels }: HeroProps) {
   return (
-    <section className="bg-gradient-to-br from-orange-700 via-orange-600 to-amber-600 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-center">
+    <section className="relative text-white overflow-hidden">
+      {/* Image de fond */}
+      <Image
+        src="/images/hero/hero-bg.jpg"
+        alt=""
+        fill
+        priority
+        className="object-cover"
+      />
+      {/* Overlay sombre pour lisibilité du texte */}
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-900/80 via-orange-800/70 to-amber-700/70" />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 text-center">
         <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-4">
           {hero.titre}
         </h1>
