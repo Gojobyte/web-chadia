@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  title: "Mentions Légales | ONG CHADIA",
+  title: "Mentions Légales",
   robots: "noindex, follow",
 };
 

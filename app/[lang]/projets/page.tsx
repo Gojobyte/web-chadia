@@ -5,7 +5,7 @@ import { getProjets } from "@/lib/data/getProjets";
 import ProjectFilter from "@/components/ui/ProjectFilter";
 
 export const metadata: Metadata = {
-  title: "Projets & Réalisations | ONG CHADIA",
+  title: "Projets & Réalisations",
   description:
     "Découvrez les projets de l'ONG CHADIA au Tchad : santé, éducation, autonomisation des femmes, eau et assainissement. Filtrez par domaine et statut.",
 };

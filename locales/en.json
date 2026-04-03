@@ -20,63 +20,63 @@
       "ctaContact": "Contact us"
     },
     "chiffres": {
-      "titre": "[A TRADUIRE]"
+      "titre": "Our impact in numbers"
     },
     "domaines": {
-      "titre": "[A TRADUIRE]",
-      "voirTous": "[A TRADUIRE]",
-      "enSavoirPlus": "[A TRADUIRE]"
+      "titre": "Our areas of work",
+      "voirTous": "View all our areas",
+      "enSavoirPlus": "Learn more"
     },
     "projets": {
-      "titre": "[A TRADUIRE]",
-      "voirTous": "[A TRADUIRE]"
+      "titre": "Our recent projects",
+      "voirTous": "View all our projects"
     },
     "ctaBeneficiaires": {
-      "titre": "[A TRADUIRE]",
-      "texte": "[A TRADUIRE]",
+      "titre": "Need help?",
+      "texte": "ONG CHADIA is here for you. Contact us directly on WhatsApp for a quick response.",
       "bouton": "Contact us on WhatsApp"
     },
     "equipe": {
-      "titre": "[A TRADUIRE]"
+      "titre": "Our team"
     },
     "partenaires": {
-      "titre": "[A TRADUIRE]"
+      "titre": "Our partners"
     },
     "brochure": {
-      "titre": "[A TRADUIRE]",
-      "bouton": "[A TRADUIRE]"
+      "titre": "Download our brochure",
+      "bouton": "Download brochure (PDF)"
     }
   },
   "about": {
-    "titre": "[A TRADUIRE]",
+    "titre": "About ONG CHADIA",
     "sections": {
-      "histoire": "[A TRADUIRE]",
-      "vision": "[A TRADUIRE]",
-      "mission": "[A TRADUIRE]",
-      "valeurs": "[A TRADUIRE]",
-      "statutLegal": "[A TRADUIRE]",
-      "zones": "[A TRADUIRE]",
-      "equipe": "[A TRADUIRE]"
+      "histoire": "Our history",
+      "vision": "Our vision",
+      "mission": "Our mission",
+      "valeurs": "Our values",
+      "statutLegal": "Legal status",
+      "zones": "Areas of operation",
+      "equipe": "Leadership team"
     }
   },
   "domaines": {
-    "titre": "[A TRADUIRE]",
-    "navigationRapide": "[A TRADUIRE]",
-    "activitesCles": "[A TRADUIRE]",
-    "indicateurs": "[A TRADUIRE]",
-    "zones": "[A TRADUIRE]",
-    "projetsLies": "[A TRADUIRE]"
+    "titre": "Areas of work",
+    "navigationRapide": "Quick navigation",
+    "activitesCles": "Key activities",
+    "indicateurs": "Impact indicators",
+    "zones": "Active areas",
+    "projetsLies": "Related projects"
   },
   "projets": {
-    "titre": "[A TRADUIRE]",
+    "titre": "Our projects & achievements",
     "filtres": {
-      "tous": "[A TRADUIRE]",
-      "enCours": "[A TRADUIRE]",
-      "termine": "[A TRADUIRE]"
+      "tous": "All",
+      "enCours": "Ongoing",
+      "termine": "Completed"
     },
-    "aucunResultat": "[A TRADUIRE]",
-    "enCoursDocumentation": "[A TRADUIRE]",
-    "voirTermines": "[A TRADUIRE]"
+    "aucunResultat": "No projects match these criteria",
+    "enCoursDocumentation": "Projects currently being documented",
+    "voirTermines": "View completed projects"
   },
   "contact": {
     "titre": "Contact us",

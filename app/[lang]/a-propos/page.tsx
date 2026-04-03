@@ -4,7 +4,7 @@ import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
 import { getAbout } from "@/lib/data/getAbout";
 
 export const metadata: Metadata = {
-  title: "À Propos | ONG CHADIA",
+  title: "À Propos",
   description:
     "Découvrez l'histoire, la mission et les valeurs de l'ONG CHADIA. Organisation tchadienne engagée pour la santé, l'éducation et l'autonomisation des femmes.",
 };

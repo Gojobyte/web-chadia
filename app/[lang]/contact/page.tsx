@@ -5,7 +5,7 @@ import { getContact } from "@/lib/data/getContact";
 import ContactForm from "@/components/ui/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact | ONG CHADIA",
+  title: "Contact",
   description:
     "Contactez l'ONG CHADIA par formulaire, email, téléphone ou WhatsApp. Partenariats, dons, bénévolat ou demande d'aide.",
 };

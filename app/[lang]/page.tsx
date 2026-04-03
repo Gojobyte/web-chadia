@@ -23,8 +23,27 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   const projets = getProjets();
   const contact = getContact();
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    name: "ONG CHADIA",
+    alternateName: "CHADIA",
+    url: "https://ong-chadia.org",
+    logo: "https://ong-chadia.org/images/logo.png",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "N'Djaména",
+      addressCountry: "TD",
+    },
+    areaServed: "TD",
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <Hero hero={accueil.hero} labels={dict.accueil.hero} />
       <ChiffresCles chiffres={accueil.chiffres} titre={dict.accueil.chiffres.titre} />
       <DomainesSection domaines={domaines} labels={dict.accueil.domaines} />

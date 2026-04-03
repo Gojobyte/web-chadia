@@ -6,7 +6,7 @@ import { getDomaines } from "@/lib/data/getDomaines";
 import DomainCard from "@/components/ui/DomainCard";
 
 export const metadata: Metadata = {
-  title: "Domaines d'intervention | ONG CHADIA",
+  title: "Domaines d'intervention",
   description:
     "Découvrez les 5 domaines d'intervention de l'ONG CHADIA : santé communautaire, éducation, autonomisation des femmes, eau et assainissement, urgences humanitaires.",
 };
