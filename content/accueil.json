@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "titre": "ONG CHADIA",
+    "tagline": "Ensemble pour un Tchad plus résilient",
+    "precomBadge": {
+      "visible": true,
+      "texte": "Partenaire du Programme Régional de Cohésion Sociale (PRECOM)"
+    },
+    "metaDescription": "ONG CHADIA agit au Tchad pour la santé communautaire, l'éducation et l'autonomisation des femmes. Découvrez nos projets et comment nous rejoindre."
+  },
+  "chiffres": [
+    {
+      "valeur": "568M+",
+      "unite": "FCFA",
+      "label": "Budget total géré [A VALIDER]"
+    },
+    {
+      "valeur": "12 000+",
+      "label": "Bénéficiaires directs [A VALIDER]"
+    },
+    {
+      "valeur": "5",
+      "label": "Domaines d'intervention"
+    },
+    {
+      "valeur": "15+",
+      "label": "Projets réalisés [A VALIDER]"
+    }
+  ],
+  "equipe": [
+    {
+      "nom": "[A VALIDER]",
+      "poste": "Directeur Exécutif",
+      "consent": false
+    },
+    {
+      "nom": "[A VALIDER]",
+      "poste": "Coordonnatrice Programmes",
+      "consent": false
+    }
+  ],
+  "partenaires": [
+    {
+      "nom": "PNUD",
+      "logo": "/images/partenaires/pnud.png"
+    },
+    {
+      "nom": "Union Européenne",
+      "logo": "/images/partenaires/ue.png"
+    },
+    {
+      "nom": "Coopération Française",
+      "logo": "/images/partenaires/france.png"
+    }
+  ],
+  "ctaBeneficiaires": {
+    "whatsappMessage": "Bonjour ONG CHADIA, j'ai besoin d'information."
+  }
+}

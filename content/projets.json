@@ -1,0 +1,112 @@
+[
+  {
+    "id": "proj-001",
+    "titre": "Accès aux soins de santé primaires — N'Djaména",
+    "domaine": "sante",
+    "statut": "en cours",
+    "zonesGeographiques": ["N'Djaména"],
+    "dateDebut": "2024-01",
+    "description": "Renforcement des capacités des centres de santé communautaires dans 3 arrondissements de N'Djaména. Formation d'agents de santé et distribution de médicaments essentiels.",
+    "indicateursImpact": [
+      { "valeur": "3 200", "label": "bénéficiaires directs [A VALIDER]" }
+    ],
+    "featured": true,
+    "responsable": "[A VALIDER]"
+  },
+  {
+    "id": "proj-002",
+    "titre": "PRECOM — Cohésion Sociale et Résilience Communautaire",
+    "domaine": "femmes",
+    "statut": "en cours",
+    "zonesGeographiques": ["N'Djaména", "Mongo"],
+    "dateDebut": "2023-06",
+    "description": "Programme régional de cohésion sociale visant à renforcer la résilience des communautés vulnérables à travers l'autonomisation économique des femmes et le dialogue intercommunautaire.",
+    "indicateursImpact": [
+      { "valeur": "1 500", "label": "femmes bénéficiaires [A VALIDER]" },
+      { "valeur": "200M+", "label": "FCFA mobilisés [A VALIDER]" }
+    ],
+    "featured": true,
+    "responsable": "[A VALIDER]"
+  },
+  {
+    "id": "proj-003",
+    "titre": "Autonomisation économique des femmes — Mongo",
+    "domaine": "femmes",
+    "statut": "en cours",
+    "zonesGeographiques": ["Mongo"],
+    "dateDebut": "2024-03",
+    "description": "Appui à la création d'activités génératrices de revenus pour les femmes de la région de Mongo. Microcrédits, formations en gestion et accompagnement entrepreneurial.",
+    "indicateursImpact": [
+      { "valeur": "350", "label": "femmes formées [A VALIDER]" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "proj-004",
+    "titre": "Accès à l'eau potable — Mongo",
+    "domaine": "eau",
+    "statut": "terminé",
+    "zonesGeographiques": ["Mongo"],
+    "dateDebut": "2023-01",
+    "dateFin": "2024-06",
+    "description": "Réhabilitation de 5 forages communautaires et formation de comités de gestion de l'eau dans la région de Mongo.",
+    "indicateursImpact": [
+      { "valeur": "5", "label": "forages réhabilités" },
+      { "valeur": "4 000", "label": "personnes desservies [A VALIDER]" }
+    ],
+    "featured": false
+  },
+  {
+    "id": "proj-005",
+    "titre": "Soutien scolaire pour enfants vulnérables — N'Djaména",
+    "domaine": "education",
+    "statut": "en cours",
+    "zonesGeographiques": ["N'Djaména"],
+    "dateDebut": "2024-09",
+    "description": "Programme de soutien scolaire et de fournitures pour les enfants issus de familles vulnérables dans 4 quartiers de N'Djaména.",
+    "indicateursImpact": [
+      { "valeur": "250", "label": "élèves soutenus [A VALIDER]" }
+    ],
+    "featured": false
+  },
+  {
+    "id": "proj-006",
+    "titre": "Réponse d'urgence inondations — N'Djaména",
+    "domaine": "urgences",
+    "statut": "terminé",
+    "zonesGeographiques": ["N'Djaména"],
+    "dateDebut": "2024-08",
+    "dateFin": "2024-11",
+    "description": "Distribution de kits d'urgence, abris temporaires et soutien alimentaire aux familles sinistrées par les inondations de 2024.",
+    "indicateursImpact": [
+      { "valeur": "2 000", "label": "personnes assistées [A VALIDER]" }
+    ],
+    "featured": false
+  },
+  {
+    "id": "proj-007",
+    "titre": "Lutte contre les VBG — N'Djaména",
+    "domaine": "femmes",
+    "statut": "en cours",
+    "zonesGeographiques": ["N'Djaména"],
+    "dateDebut": "2025-01",
+    "description": "Accompagnement juridique et psychosocial des victimes de violences basées sur le genre. Sensibilisation communautaire et plaidoyer.",
+    "indicateursImpact": [
+      { "valeur": "120", "label": "femmes accompagnées [A VALIDER]" }
+    ],
+    "featured": false
+  },
+  {
+    "id": "proj-008",
+    "titre": "Formation professionnelle jeunes — N'Djaména",
+    "domaine": "education",
+    "statut": "en cours",
+    "zonesGeographiques": ["N'Djaména"],
+    "dateDebut": "2025-02",
+    "description": "Formations professionnelles en couture, menuiserie et informatique pour les jeunes déscolarisés de N'Djaména.",
+    "indicateursImpact": [
+      { "valeur": "80", "label": "jeunes en formation [A VALIDER]" }
+    ],
+    "featured": false
+  }
+]

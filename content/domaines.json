@@ -1,0 +1,104 @@
+[
+  {
+    "id": "sante",
+    "titre": "Santé Communautaire",
+    "icone": "🏥",
+    "description": "Amélioration de l'accès aux soins de santé primaires pour les populations vulnérables",
+    "descriptionLongue": "L'ONG CHADIA intervient dans le domaine de la santé communautaire à travers des campagnes de sensibilisation, la formation d'agents de santé communautaire et le soutien aux structures sanitaires locales.",
+    "activitesCles": [
+      "Campagnes de sensibilisation santé",
+      "Formation d'agents de santé communautaire",
+      "Soutien aux centres de santé locaux",
+      "Distribution de moustiquaires et médicaments essentiels"
+    ],
+    "indicateursImpact": [
+      { "valeur": "3 200", "label": "bénéficiaires directs [A VALIDER]" },
+      { "valeur": "12", "label": "agents formés [A VALIDER]" }
+    ],
+    "zonesActives": ["N'Djaména", "Mongo"],
+    "projetsAssocies": [
+      { "id": "proj-001", "titre": "Accès aux soins — N'Djaména" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "education",
+    "titre": "Éducation & Formation",
+    "icone": "📚",
+    "description": "Promotion de l'accès à l'éducation et à la formation professionnelle pour les jeunes",
+    "descriptionLongue": "L'accès à l'éducation est un levier fondamental pour le développement. CHADIA soutient la scolarisation des enfants vulnérables et propose des formations professionnelles adaptées aux réalités du marché tchadien.",
+    "activitesCles": [
+      "Soutien scolaire pour enfants vulnérables",
+      "Formations professionnelles pour les jeunes",
+      "Alphabétisation des adultes",
+      "Bourses d'études"
+    ],
+    "indicateursImpact": [
+      { "valeur": "800", "label": "élèves soutenus [A VALIDER]" }
+    ],
+    "zonesActives": ["N'Djaména"],
+    "projetsAssocies": [],
+    "featured": true
+  },
+  {
+    "id": "femmes",
+    "titre": "Autonomisation des Femmes",
+    "icone": "👩‍👧",
+    "description": "Renforcement des capacités économiques et sociales des femmes et filles tchadiennes",
+    "descriptionLongue": "L'autonomisation des femmes est au cœur de la mission de CHADIA. À travers des programmes d'entrepreneuriat, de lutte contre les violences basées sur le genre et d'appui juridique, l'ONG accompagne les femmes vers l'indépendance.",
+    "activitesCles": [
+      "Microcrédits et formations entrepreneuriales",
+      "Lutte contre les violences basées sur le genre (VBG)",
+      "Accompagnement juridique des victimes",
+      "Groupements féminins d'épargne"
+    ],
+    "indicateursImpact": [
+      { "valeur": "500", "label": "femmes accompagnées [A VALIDER]" }
+    ],
+    "zonesActives": ["N'Djaména", "Mongo"],
+    "projetsAssocies": [
+      { "id": "proj-003", "titre": "Autonomisation économique des femmes — Mongo" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "eau",
+    "titre": "Eau & Assainissement",
+    "icone": "💧",
+    "description": "Accès à l'eau potable et amélioration des conditions d'hygiène et d'assainissement",
+    "descriptionLongue": "L'accès à l'eau potable est un enjeu vital au Tchad. CHADIA construit des points d'eau, réhabilite des forages et mène des campagnes d'hygiène communautaire pour réduire les maladies hydriques.",
+    "activitesCles": [
+      "Construction et réhabilitation de forages",
+      "Campagnes d'hygiène communautaire",
+      "Formation de comités de gestion de l'eau",
+      "Latrines communautaires"
+    ],
+    "indicateursImpact": [
+      { "valeur": "5", "label": "forages réhabilités [A VALIDER]" }
+    ],
+    "zonesActives": ["Mongo"],
+    "projetsAssocies": [
+      { "id": "proj-004", "titre": "Accès à l'eau potable — Mongo" }
+    ],
+    "featured": true
+  },
+  {
+    "id": "urgences",
+    "titre": "Réponse aux Urgences Humanitaires",
+    "icone": "🚨",
+    "description": "Intervention rapide lors de crises humanitaires (inondations, déplacements, épidémies)",
+    "descriptionLongue": "Le Tchad est régulièrement frappé par des crises humanitaires. CHADIA dispose d'une capacité de réponse rapide pour venir en aide aux populations affectées par les inondations, les déplacements forcés et les épidémies.",
+    "activitesCles": [
+      "Distribution de kits d'urgence",
+      "Abris temporaires",
+      "Soutien alimentaire d'urgence",
+      "Appui psychosocial"
+    ],
+    "indicateursImpact": [
+      { "valeur": "2 000", "label": "personnes assistées [A VALIDER]" }
+    ],
+    "zonesActives": ["N'Djaména", "Mongo"],
+    "projetsAssocies": [],
+    "featured": false
+  }
+]
