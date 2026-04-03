@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "guard": "bash -c 'grep -rn \"\\[A VALIDER\\]\\|\\[PLACEHOLDER\\]\\|\\[A REMPLACER\\]\\|\\[A TRADUIRE\\]\\|Lorem ipsum\" --include=\"*.json\" --include=\"*.ts\" --include=\"*.tsx\" . --exclude-dir=node_modules --exclude-dir=.next --exclude-dir=docs && echo \"❌ Mots interdits trouvés\" && exit 1 || echo \"✅ Guard passé\"'"
   },
   "dependencies": {
     "@vercel/speed-insights": "^2.0.0",

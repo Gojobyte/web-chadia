@@ -1,0 +1,57 @@
+name: Guard PR — Vérification mots interdits
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  guard:
+    name: Recherche de contenu placeholder
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Recherche de mots interdits
+        run: |
+          echo "Recherche de mots interdits dans les fichiers..."
+          FOUND=0
+
+          # Liste des patterns interdits
+          PATTERNS=(
+            "\[A VALIDER\]"
+            "\[PLACEHOLDER\]"
+            "\[A REMPLACER\]"
+            "\[A TRADUIRE\]"
+            "Lorem ipsum"
+          )
+
+          for pattern in "${PATTERNS[@]}"; do
+            # Chercher dans tous les fichiers traqués par git, en ignorant ce workflow et .env.example
+            RESULTS=$(grep -rn "$pattern" --include="*.json" --include="*.ts" --include="*.tsx" --include="*.md" . \
+              --exclude-dir=node_modules \
+              --exclude-dir=.next \
+              --exclude=".github/workflows/guard-pr.yml" \
+              --exclude=".env.example" \
+              --exclude="docs/*" \
+              2>/dev/null || true)
+
+            if [ -n "$RESULTS" ]; then
+              echo ""
+              echo "❌ Pattern interdit trouvé : $pattern"
+              echo "$RESULTS"
+              FOUND=1
+            fi
+          done
+
+          if [ "$FOUND" -eq 1 ]; then
+            echo ""
+            echo "============================================"
+            echo "❌ GUARD ÉCHOUÉ — Des mots interdits ont été trouvés."
+            echo "   Remplacez les valeurs [A VALIDER] etc. avant de merger."
+            echo "============================================"
+            exit 1
+          else
+            echo ""
+            echo "✅ Aucun mot interdit trouvé. Guard passé avec succès."
+          fi
