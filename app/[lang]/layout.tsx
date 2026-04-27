@@ -17,7 +17,7 @@ export default async function LangLayout({
 
   const locale = lang as Locale;
   const dict = getDictionary(locale);
-  const contact = getContact();
+  const contact = await getContact();
 
   return (
     <>

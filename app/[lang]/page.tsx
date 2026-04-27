@@ -18,10 +18,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
   const locale = lang as Locale;
   const dict = getDictionary(locale);
-  const accueil = getAccueil();
-  const domaines = getDomaines();
-  const projets = getProjets();
-  const contact = getContact();
+  const accueil = await getAccueil();
+  const domaines = await getDomaines();
+  const projets = await getProjets();
+  const contact = await getContact();
 
   const jsonLd = {
     "@context": "https://schema.org",

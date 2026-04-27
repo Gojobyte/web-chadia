@@ -17,7 +17,7 @@ export default async function DomainesPage({ params }: { params: Promise<{ lang:
 
   const locale = lang as Locale;
   const dict = getDictionary(locale);
-  const domaines = getDomaines();
+  const domaines = await getDomaines();
   const t = dict.domaines;
 
   return (

@@ -16,7 +16,7 @@ export default async function ProjetsPage({ params }: { params: Promise<{ lang: 
 
   const locale = lang as Locale;
   const dict = getDictionary(locale);
-  const projets = getProjets();
+  const projets = await getProjets();
   const t = dict.projets;
 
   return (

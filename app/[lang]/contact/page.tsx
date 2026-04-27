@@ -16,7 +16,7 @@ export default async function ContactPage({ params }: { params: Promise<{ lang: 
 
   const locale = lang as Locale;
   const dict = getDictionary(locale);
-  const contact = getContact();
+  const contact = await getContact();
   const t = dict.contact;
   const cleanWhatsapp = contact.whatsapp.replace(/[^+\d]/g, "");
 

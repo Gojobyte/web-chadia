@@ -15,7 +15,7 @@ export default async function AProposPage({ params }: { params: Promise<{ lang: 
 
   const locale = lang as Locale;
   const dict = getDictionary(locale);
-  const about = getAbout();
+  const about = await getAbout();
   const t = dict.about;
   const membresConsentis = about.equipe.filter((m) => m.consent);
   const showStatutLegal = about.statutLegal.numeroEnregistrement && about.statutLegal.autorite;
