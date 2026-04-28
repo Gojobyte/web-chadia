@@ -6,6 +6,7 @@ interface DomainCardProps {
   titre: string;
   icone: string;
   description: string;
+  image?: string;          // URL Cloudinary (depuis l'API)
   variant?: "full" | "compact";
   enSavoirPlus?: string;
 }
@@ -23,6 +24,7 @@ export default function DomainCard({
   titre,
   icone,
   description,
+  image,
   variant = "full",
   enSavoirPlus,
 }: DomainCardProps) {
@@ -38,7 +40,8 @@ export default function DomainCard({
     );
   }
 
-  const imageSrc = domainImages[id];
+  // Utiliser l'image Cloudinary si dispo, sinon fallback local
+  const imageSrc = (image && image.startsWith("http")) ? image : domainImages[id];
 
   return (
     <div className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow overflow-hidden flex flex-col">

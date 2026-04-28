@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { Accueil } from "@/lib/types";
 
 interface HeroProps {
-  hero: Accueil["hero"];
+  hero: Accueil["hero"] & { heroImage?: string };
   labels: {
     ctaProjets: string;
     ctaContact: string;
@@ -15,7 +15,7 @@ export default function Hero({ hero, labels }: HeroProps) {
     <section className="relative text-white overflow-hidden">
       {/* Image de fond */}
       <Image
-        src="/images/hero/hero-bg.jpg"
+        src={hero.heroImage && hero.heroImage.startsWith("http") ? hero.heroImage : "/images/hero/hero-bg.jpg"}
         alt=""
         fill
         priority

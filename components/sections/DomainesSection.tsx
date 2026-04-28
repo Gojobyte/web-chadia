@@ -29,6 +29,7 @@ export default function DomainesSection({ domaines, labels }: DomainesSectionPro
               titre={domaine.titre}
               icone={domaine.icone}
               description={domaine.description}
+              image={domaine.image}
               enSavoirPlus={labels.enSavoirPlus}
             />
           ))}

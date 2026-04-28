@@ -63,6 +63,7 @@ export interface Domaine {
   icone: string;
   description: string;
   descriptionLongue: string;
+  image?: string;
   activitesCles: string[];
   indicateursImpact: IndicateurImpact[];
   zonesActives: string[];
