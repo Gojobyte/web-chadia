@@ -6,7 +6,7 @@ const API_URL = process.env.BACKEND_URL ?? "https://web-chadia-backend-productio
 export async function getAbout(): Promise<About> {
   try {
     const res = await fetch(`${API_URL}/api/public/about`, {
-      next: { revalidate: 300 },
+      next: { revalidate: 60 },
     });
     if (!res.ok) throw new Error("API error");
     const data = await res.json();

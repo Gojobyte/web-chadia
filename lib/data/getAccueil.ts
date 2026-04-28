@@ -6,7 +6,7 @@ const API_URL = process.env.BACKEND_URL ?? "https://web-chadia-backend-productio
 export async function getAccueil(): Promise<Accueil> {
   try {
     const res = await fetch(`${API_URL}/api/public/accueil`, {
-      next: { revalidate: 300 }, // Revalider le cache toutes les 5 minutes
+      next: { revalidate: 60 }, // Revalider le cache toutes les 60 secondes
     });
     if (!res.ok) throw new Error("API error");
     const data = await res.json();
