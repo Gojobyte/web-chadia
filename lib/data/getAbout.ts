@@ -10,7 +10,24 @@ export async function getAbout(): Promise<About> {
     });
     if (!res.ok) throw new Error("API error");
     const data = await res.json();
-    return data as About;
+
+    // Transformer les donnees API vers le format attendu
+    return {
+      histoire: data.histoire ?? aboutData.histoire,
+      vision: data.vision ?? aboutData.vision,
+      mission: data.mission ?? aboutData.mission,
+      // Nettoyer les valeurs (retirer id, ordre, infosONGId)
+      valeurs: Array.isArray(data.valeurs)
+        ? data.valeurs.map((v: Record<string, unknown>) => ({
+            titre: v.titre,
+            description: v.description,
+          }))
+        : aboutData.valeurs,
+      statutLegal: data.statutLegal ?? aboutData.statutLegal,
+      // L'API ne renvoie pas zonesIntervention, on utilise le fallback
+      zonesIntervention: data.zonesIntervention ?? aboutData.zonesIntervention,
+      equipe: data.equipe ?? aboutData.equipe,
+    } as About;
   } catch {
     return aboutData as About;
   }
