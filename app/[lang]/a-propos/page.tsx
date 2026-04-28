@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, type Locale } from "@/lib/i18n";
 import { getAbout } from "@/lib/data/getAbout";
@@ -88,11 +89,17 @@ export default async function AProposPage({ params }: { params: Promise<{ lang: 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
             {membresConsentis.map((membre, i) => (
               <div key={i} className="text-center">
-                <div className="w-20 h-20 rounded-full bg-orange-100 flex items-center justify-center mx-auto mb-2">
-                  <span className="text-orange-700 font-bold text-xl">
-                    {membre.nom.split(" ").map((m) => m[0]).join("").slice(0, 2).toUpperCase()}
-                  </span>
-                </div>
+                {membre.photo ? (
+                  <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-2">
+                    <Image src={membre.photo} alt={membre.nom} width={80} height={80} className="w-full h-full object-cover" />
+                  </div>
+                ) : (
+                  <div className="w-20 h-20 rounded-full bg-orange-100 flex items-center justify-center mx-auto mb-2">
+                    <span className="text-orange-700 font-bold text-xl">
+                      {membre.nom.split(" ").map((m) => m[0]).join("").slice(0, 2).toUpperCase()}
+                    </span>
+                  </div>
+                )}
                 <p className="font-semibold text-sm text-gray-900">{membre.nom}</p>
                 <p className="text-xs text-gray-500">{membre.poste}</p>
               </div>
