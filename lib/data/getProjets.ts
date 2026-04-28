@@ -10,7 +10,20 @@ export async function getProjets(): Promise<Projet[]> {
     });
     if (!res.ok) throw new Error("API error");
     const data = await res.json();
-    return data.projets as Projet[];
+
+    // Transformer les donnees API vers le format attendu par les composants
+    // L'API renvoie domaine: { id, titre }, le front attend domaine: "sante"
+    return data.projets.map((p: Record<string, unknown>) => ({
+      ...p,
+      domaine: typeof p.domaine === "object" && p.domaine !== null
+        ? (p.domaine as { id: string }).id
+        : p.domaine,
+      zonesGeographiques: Array.isArray(p.zonesGeographiques)
+        ? p.zonesGeographiques.map((z: unknown) =>
+            typeof z === "object" && z !== null ? (z as { nom: string }).nom : z
+          )
+        : p.zonesGeographiques,
+    })) as Projet[];
   } catch {
     return projetsData as Projet[];
   }
