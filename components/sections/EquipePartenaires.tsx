@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { MembreEquipe, Partenaire } from "@/lib/types";
 
 interface EquipePartenairesProps {
@@ -45,7 +46,13 @@ export default function EquipePartenaires({
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
               {membresConsentis.map((membre, index) => (
                 <div key={index} className="text-center">
-                  <AvatarInitiales nom={membre.nom} />
+                  {membre.photo ? (
+                    <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-3">
+                      <Image src={membre.photo} alt={membre.nom} width={80} height={80} className="w-full h-full object-cover" />
+                    </div>
+                  ) : (
+                    <AvatarInitiales nom={membre.nom} />
+                  )}
                   <p className="font-semibold text-gray-900 text-sm">
                     {membre.nom.replace(/\s*\[A VALIDER\]\s*/g, "")}
                   </p>
@@ -73,9 +80,13 @@ export default function EquipePartenaires({
                 className="flex items-center justify-center h-16 px-4"
                 title={partenaire.nom}
               >
-                <span className="text-lg font-semibold text-gray-600">
-                  {partenaire.nom}
-                </span>
+                {partenaire.logo && partenaire.logo.startsWith("http") ? (
+                  <Image src={partenaire.logo} alt={partenaire.nom} width={120} height={48} className="h-12 w-auto object-contain" />
+                ) : (
+                  <span className="text-lg font-semibold text-gray-600">
+                    {partenaire.nom}
+                  </span>
+                )}
               </div>
             ))}
           </div>
